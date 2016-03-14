@@ -1,338 +1,386 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MobiCycle for Organisations</title>
-  <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Waste Service Standards - Waste Service Standards</title>
+    <meta name="description" content="Waste Service Standards - Waste Service Standards" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="keywords" content="github pages, Jekyll, foundation 5, " />
 
+    <!-- CSS  Get: http://www.google.com/fonts/
+    http://stackoverflow.com/questions/7985081/how-to-deploy-a-jekyll-site-locally-with-css-js-and-background-images-included
+    ================================================== -->
+    <!-- <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,800|Raleway:400,200,700" rel="stylesheet" type="text/css"> -->
+    <!-- Fount Awesome -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="/waste-service-standards/css/style.css" />
+    <link rel="stylesheet" href="/waste-service-standards/css/syntax.css" />
 
-  <!-- Bootstrap -->
-  <link rel="stylesheet" type="text/css" href="organisations/assets/css/bootstrap.css">
+    <!-- Ah, the favicon.
+    ================================================== -->
+    <link rel="shortcut icon" href="favicon.ico">
 
-  <!-- Main Style -->
-  <link rel="stylesheet" type="text/css" href="organisations/assets/css/main.css">
+    <!-- Open Graph: https://developers.facebook.com/docs/opengraph/howtos/maximizing-distribution-media-content/
+    Twitter: https://dev.twitter.com/docs/cards/types/summary-card
+    ============================== -->
+    <meta property="og:title" content="Waste Service Standards"/>
+    <meta property="og:site_name" content=" - Waste Service Standards"/>
+    <meta property="og:url" content=" - /waste-service-standards"/>
+    <meta property="og:description" content="Technical specifications for local waste and recycling services"/>
+    <meta property="og:image" content=""/>
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@">
+    <meta name="twitter:title" content="Waste Service Standards">
+    <meta name="twitter:description" content="Technical specifications for local waste and recycling services">
+    <meta name="twitter:image" content="">
+  
+    <!-- modernizr
+    ================================================== -->
+    
+    <script src="/waste-service-standards/bower_components/modernizr/modernizr.js"></script>
+  </head>
+  <body>
 
-  <!-- Responsive Style -->
-  <link rel="stylesheet" type="text/css" href="organisations/assets/css/responsive.css">
-
-  <!--Icon Font-->
-  <link rel="stylesheet" media="screen" href="organisations/assets/fonts/font-awesome/font-awesome.min.css" />
-
-
-  <!-- Extras -->
-  <link rel="stylesheet" type="text/css" href="organisations/assets/extras/animate.css">
-
-
-  <!-- jQuery Load -->
-  <script src="organisations/assets/js/jquery-min.js"></script>
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-
-  <!--[if lt IE 9]>
-          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<div class="off-canvas-wrap" data-offcanvas>
+  <div class="inner-wrap"> 
+    <!-- Add header and nav here  -->
+    
+        <!--[if lt IE 8]>
+            <div data-alert class="alert-box alert radius" class="browsehappy">Please <a href="http://browsehappy.com/">upgrade your browser</a>. <a href="#" class="close">&times;</a></div>
         <![endif]-->
 
-</head>
-
-<body>
-  <!-- Nav Menu Section -->
-  <div class="logo-menu">
-    <nav class="navbar navbar-default">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header col-md-3">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html"><i class="fa fa-fa fa-cubes"></i> MobiCycle Ltd</a>
-        </div>
-
-        <div class="collapse navbar-collapse" id="navbar">
-          <ul class="nav navbar-nav pull-right">
-            <li class="active"><a href="#key-features">Why Mobicycle?</a></li>
-            <li><a href="#feature-list-item-1">Technology</a></li>
-            <li><a href="#feature-list-item-3">Manufacturing</a></li>
-            <li><a href="/index.html#contact">Contact Us</a></li>
+    <header id="header" class="">
+      <div class="sticky contain-to-grid">
+        <nav class="top-bar" data-topbar role="navigation">
+          <ul class="title-area">
+            <li class="name">
+              <h1><a href="/waste-service-standards/">Waste Service Standards</a></h1>
+            </li>
+             <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+            <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
           </ul>
-        </div>
+
+          <section class="top-bar-section">
+            <!-- Right Nav Section -->
+            <ul class="right">
+              <li class="">
+                <a href="https://github.com/communitiesuk/waste-service-standards"><i class="fa fa-github"></i> GitHub</a>
+              </li>
+            </ul>
+
+            <!-- Left Nav Section -->
+            <ul class="left">
+              <li><a href="/waste-service-standards/tutorials.html">Tutorials</a></li>
+<li class="has-dropdown">
+  <a href="/waste-service-standards/models/index.html">Models</a>
+  <ul class="dropdown">
+    <li><a href="/waste-service-standards/models/case.html">Case</a></li>
+    <li><a href="/waste-service-standards/models/event-type.html">Event type</a></li>
+    <li><a href="/waste-service-standards/models/feature-type.html">Feature type</a></li>
+    <li><a href="/waste-service-standards/models/feature.html">Feature</a></li>
+    <li><a href="/waste-service-standards/models/material.html">Material</a></li>
+    <li><a href="/waste-service-standards/models/material-item.html">Material item</a></li>
+    <li><a href="/waste-service-standards/models/round.html">Round</a></li>
+    <li><a href="/waste-service-standards/models/site.html">Site</a></li>
+    <li><a href="/waste-service-standards/models/task.html">Task</a></li>
+    <li><a href="/waste-service-standards/models/waste-container-type.html">Waste container type</a></li>
+    <li><a href="/waste-service-standards/models/waste-container.html">Waste container</a></li>
+    <li><a href="/waste-service-standards/models/waste-event.html">Waste event</a></li>
+    <li><a href="/waste-service-standards/models/waste-service.html">Waste service</a></li>
+    <li><hr/></li>
+    <li><a href="/waste-service-standards/models/address.html">Address</a></li>
+    <li><a href="/waste-service-standards/models/place.html">Place</a></li>
+  </ul>
+</li>
+<li class="has-dropdown">
+  <a href="/waste-service-standards/taxonomies/index.html">Taxonomies</a>
+  <ul class="dropdown">
+    <li><a href="/waste-service-standards/taxonomies/bulky-items.html">Bulky items</a></li>
+    <li><a href="/waste-service-standards/taxonomies/container-types.html">Container types</a></li>
+    <li><a href="/waste-service-standards/taxonomies/materials.html">Materials</a></li>
+    <li><a href="/waste-service-standards/taxonomies/collection-events.html">Missed collection events</a></li>
+  </ul>
+</li>
+<li class="has-dropdown">
+  <a href="/waste-service-standards/apis/index.html">APIs</a>
+  <ul class="dropdown">
+    <li><a href="/waste-service-standards/apis/waste_services.html">Waste services</a></li>
+    <li><a href="/waste-service-standards/apis/places.html">Places</a></li>
+  </ul>
+
+</li>
+<li><a href="/waste-service-standards/data/data-formats.html">Data</a></li>
+<li><a href="/waste-service-standards/about.html">About</a></li>
+
+            </ul>
+          </section>
+        </nav>
       </div>
-    </nav>
+
+       <!-- <div class="small-12 columns">
+            <section class="right show-for-medium-up mam">
+                <ul class="inline-list">
+                    <li><a href="/waste-service-standards/tutorials.html">Tutorials</a></li>
+<li class="has-dropdown">
+  <a href="/waste-service-standards/models/index.html">Models</a>
+  <ul class="dropdown">
+    <li><a href="/waste-service-standards/models/case.html">Case</a></li>
+    <li><a href="/waste-service-standards/models/event-type.html">Event type</a></li>
+    <li><a href="/waste-service-standards/models/feature-type.html">Feature type</a></li>
+    <li><a href="/waste-service-standards/models/feature.html">Feature</a></li>
+    <li><a href="/waste-service-standards/models/material.html">Material</a></li>
+    <li><a href="/waste-service-standards/models/material-item.html">Material item</a></li>
+    <li><a href="/waste-service-standards/models/round.html">Round</a></li>
+    <li><a href="/waste-service-standards/models/site.html">Site</a></li>
+    <li><a href="/waste-service-standards/models/task.html">Task</a></li>
+    <li><a href="/waste-service-standards/models/waste-container-type.html">Waste container type</a></li>
+    <li><a href="/waste-service-standards/models/waste-container.html">Waste container</a></li>
+    <li><a href="/waste-service-standards/models/waste-event.html">Waste event</a></li>
+    <li><a href="/waste-service-standards/models/waste-service.html">Waste service</a></li>
+    <li><hr/></li>
+    <li><a href="/waste-service-standards/models/address.html">Address</a></li>
+    <li><a href="/waste-service-standards/models/place.html">Place</a></li>
+  </ul>
+</li>
+<li class="has-dropdown">
+  <a href="/waste-service-standards/taxonomies/index.html">Taxonomies</a>
+  <ul class="dropdown">
+    <li><a href="/waste-service-standards/taxonomies/bulky-items.html">Bulky items</a></li>
+    <li><a href="/waste-service-standards/taxonomies/container-types.html">Container types</a></li>
+    <li><a href="/waste-service-standards/taxonomies/materials.html">Materials</a></li>
+    <li><a href="/waste-service-standards/taxonomies/collection-events.html">Missed collection events</a></li>
+  </ul>
+</li>
+<li class="has-dropdown">
+  <a href="/waste-service-standards/apis/index.html">APIs</a>
+  <ul class="dropdown">
+    <li><a href="/waste-service-standards/apis/waste_services.html">Waste services</a></li>
+    <li><a href="/waste-service-standards/apis/places.html">Places</a></li>
+  </ul>
+
+</li>
+<li><a href="/waste-service-standards/data/data-formats.html">Data</a></li>
+<li><a href="/waste-service-standards/about.html">About</a></li>
+
+                </ul>
+            </section>
+
+            <section class="right show-for-small">
+                <ul class="inline-list mam">
+                <li>
+                    <a class="right-off-canvas-toggle" href="#"><i class="fa fa-bars fa-lg">
+                    </i></a>
+                </li>
+                </ul>
+            </section>
+
+            <h1><a href="/waste-service-standards">Waste Service Standards</a></h1>-->
+
+        </div>
+    </header>
+
+        <!-- Off Canvas Menu -->
+        <aside class="right-off-canvas-menu">
+            <!-- navigation list goes here -->
+            <ul class="off-canvas-list">
+               <li><a href="/waste-service-standards/tutorials.html">Tutorials</a></li>
+<li class="has-dropdown">
+  <a href="/waste-service-standards/models/index.html">Models</a>
+  <ul class="dropdown">
+    <li><a href="/waste-service-standards/models/case.html">Case</a></li>
+    <li><a href="/waste-service-standards/models/event-type.html">Event type</a></li>
+    <li><a href="/waste-service-standards/models/feature-type.html">Feature type</a></li>
+    <li><a href="/waste-service-standards/models/feature.html">Feature</a></li>
+    <li><a href="/waste-service-standards/models/material.html">Material</a></li>
+    <li><a href="/waste-service-standards/models/material-item.html">Material item</a></li>
+    <li><a href="/waste-service-standards/models/round.html">Round</a></li>
+    <li><a href="/waste-service-standards/models/site.html">Site</a></li>
+    <li><a href="/waste-service-standards/models/task.html">Task</a></li>
+    <li><a href="/waste-service-standards/models/waste-container-type.html">Waste container type</a></li>
+    <li><a href="/waste-service-standards/models/waste-container.html">Waste container</a></li>
+    <li><a href="/waste-service-standards/models/waste-event.html">Waste event</a></li>
+    <li><a href="/waste-service-standards/models/waste-service.html">Waste service</a></li>
+    <li><hr/></li>
+    <li><a href="/waste-service-standards/models/address.html">Address</a></li>
+    <li><a href="/waste-service-standards/models/place.html">Place</a></li>
+  </ul>
+</li>
+<li class="has-dropdown">
+  <a href="/waste-service-standards/taxonomies/index.html">Taxonomies</a>
+  <ul class="dropdown">
+    <li><a href="/waste-service-standards/taxonomies/bulky-items.html">Bulky items</a></li>
+    <li><a href="/waste-service-standards/taxonomies/container-types.html">Container types</a></li>
+    <li><a href="/waste-service-standards/taxonomies/materials.html">Materials</a></li>
+    <li><a href="/waste-service-standards/taxonomies/collection-events.html">Missed collection events</a></li>
+  </ul>
+</li>
+<li class="has-dropdown">
+  <a href="/waste-service-standards/apis/index.html">APIs</a>
+  <ul class="dropdown">
+    <li><a href="/waste-service-standards/apis/waste_services.html">Waste services</a></li>
+    <li><a href="/waste-service-standards/apis/places.html">Places</a></li>
+  </ul>
+
+</li>
+<li><a href="/waste-service-standards/data/data-formats.html">Data</a></li>
+<li><a href="/waste-service-standards/about.html">About</a></li>
+
+            </ul>
+        </aside>
+
+
+        <div class="content-region row">
+          <section role="main">
+            <div class="small-12 columns">
+        
+
+<div class="row">
+  <div class="columns small-2">
+    <div class="logo">
+      <img src="/waste-service-standards/images/DCLG_3282_AW.png"/>
+    </div>
   </div>
-  <!-- Nav Menu Section End -->
 
-  <!-- Hero Area Section -->
+  <div class="columns large-10">
+  <h1 id="introduction">Introduction</h1>
 
-  <section id="hero-area">
-    <div class="hero-inner">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h1 class="title-big">MobiCycle for Organisations</h1>
-            <h2 class="subtitle-big">From Local Authorities to Retailers to Recyclers</h2>
-          </div>
-          
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center"></div>
-          <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 text-center">
+<p>This site defines the technical specifications developed by the <a href="http://www.localdirect.gov.uk/product/local-waste-service-standards-project/">Local Waste Service Standards Project</a>.</p>
 
-              <script>
-                (function() {
-                  var cx = '010058901699383832798:x4w7ndylddw';
-                  var gcse = document.createElement('script');
-                  gcse.type = 'text/javascript';
-                  gcse.async = true;
-                  gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-                      '//cse.google.com/cse.js?cx=' + cx;
-                  var s = document.getElementsByTagName('script')[0];
-                  s.parentNode.insertBefore(gcse, s);
-                })();
-              </script>
-              <gcse:search></gcse:search>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<p>They include:</p>
 
-  <!-- Hero Area Section End-->
+<table>
+  <tbody>
+    <tr>
+      <td><strong>Data models</strong></td>
+      <td>What elements make up a service and the properties we need to know about them.</td>
+    </tr>
+    <tr>
+      <td><strong>Taxonomies</strong></td>
+      <td>Useful reference lists of terms.</td>
+    </tr>
+    <tr>
+      <td><strong>API</strong></td>
+      <td>A consistent way to exchange live data with backend and in-cab systems.</td>
+    </tr>
+    <tr>
+      <td><strong>Data formats</strong></td>
+      <td>For exchanging data with suppliers.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Here’s why we think developing digital standards are a good idea:</strong></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oUPJbY3ueo8" frameborder="0" allowfullscreen=""></iframe>
 
 
+  </div>
+</div>
 
-  <!-- feature Section -->
-
-  <section id="key-features">
-    <div class="container text-center">
-      <div class="row">
-        <h1 class="title-small wow tada">Why MobiCycle?</h1>
-        <h2 class="subtitle-small wow fadeInLeft" data-wow-delay=".5s">End to End Solutions</h2>
-
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay=".5s">
-          <div class="feature-item">
-            <i class="fa fa-coffee fa-4x"></i>
-            <h3>#1</h3>
-            <p>Easy</p>
-          </div>
-        </div>
-
-
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay=".8s">
-          <div class="feature-item">
-            <i class="fa fa-check fa-4x"></i>
-            <h3>#2</h3>
-            <p>Affordable</p>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 wow fadeInUp" data-wow-delay="1.2s">
-          <div class="feature-item">
-            <i class="fa fa-leaf fa-4x"></i>
-            <h3>#3</h3>
-            <p>Environmentally Sound</p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-  <!-- feature Section End -->
-
-  <!-- feature Section Start -->
-  <section id="features">
-    <div class="container">
-      <div class="row">
-        <h1 class="title-small wow tada">We Offer Solutions</h1>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-          <div class="content-left text-right wow fadeInLeft animated" data-wow-offset="10">
-            <div class="box-item left">
-              <span class="icon">
-                <i class="fa fa-thumbs-down"></i>
-              </span>
-              <div class="text">
-                <h4>Declining or Stagnant Collections?</h4>
-                <p>We can work with you on motivating your customers through a combination of financial measures and social impact.</p>
-              </div>
+           
             </div>
-            <div class="box-item left">
-              <span class="icon">
-                <i class="fa fa-money"></i>
-              </span>
-              <div class="text">
-                <h4>Increasing Collection Costs?</h4>
-                <p>Lower your rate of commingled ewaste to preserve ewaste for resale.</p>
-              </div>
-            </div>
-            <div class="box-item left">
-              <span class="icon">
-                <i class="fa fa-fire"></i>
-              </span>
-              <div class="text">
-                <h4>Concerned about higher incineration rates?</h4>
-                <p>Reusable ewaste is sold to the Public. Scrap is sold directly to responsible recyclers.</p>
-              </div>              
-            </div>
-          </div>
+          </section>
         </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 center">
-          <div class="show-box wow fadeInDown animated center" data-wow-offset="10">
-            <br><br><br><br><br><br><img src="organisations/assets/img/mobibin2.png" alt="mobibin">
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
-          <div class="content-right text-left wow fadeInRight animated" data-wow-offset="10">
-            <div class="box-item right">
-              <span class="icon">
-                <i class="fa fa-question-circle"></i>
-              </span>
-              <div class="text">
-                <h4>Uncertain about what happens to your collected ewaste?</h4>
-                <p>We offer tracking solutions to fill the gap in the circular economy.</p>
-              </div>
-            </div>
-            <div class="box-item right">
-              <span class="icon">
-                <i class="fa fa-check"></i>
-              </span>
-              <div class="text">
-                <h4>Do You require an End to End Solution?</h4>
-                <p>We map the customer journey to make the process fun and convenient.</p>
-              </div>
-            </div>
-            <div class="box-item right">
-              <span class="icon">
-                <i class="fa fa-legal"></i>
-              </span>
-              <div class="text">
-                <h4>Struggling to follow legislative changes?</h4>
-                <p>We can talk to you about the latest and pending, local and regional trends.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Features Section Start -->
+        
 
-  <!-- feature-list Section -->
-  <section id="main-features">
-    <div id="feature-list-item-1">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h1 class="title-small wow fadeInLeft" data-wow-offset="10">eWaste API</h1>
-            <h2 class="subtitle-small wow fadeInUp" data-wow-delay=".8s" data-wow-offset="10"> 
-            An API (application program interface) is a set of routines, protocols, and tools for building software applications. MobiCycle's eWaste API offers local authorities, electronics manufacturers and retailers the ability to share data and attain critical insights into their supply chain. It provides access to not only resources. The API also provides access to a service.
-            <br> <a class="btn btn-default btn-lg" href="http://mobicycle.github.io/eWaste-API">Learn More</a> </h2>
-          </div>
-          <div class="col-md-6 wow fadeInRight" data-wow-delay=".5s" data-wow-offset="10">
-          <br><script src="//content.jwplatform.com/players/xJL1dUrs-8bSfkr1w.js"></script>
-          </div>
-        </div> 
-      </div>
-    </div>
-    <div id="feature-list-item-2">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h1 class="title-small wow fadeInLeft" data-wow-offset="10">eWaste Recycling Locator</h1>
-            <h2 class="subtitle-small wow fadeInUp" data-wow-delay=".8s" data-wow-offset="10">
-            According to <a href="http://www.computerweekly.com/feature/Waste-and-traffic-management-applications-come-from-Internet-of-Things"><i>Computer Weekly</i></a>, the global volume of e-waste generated is expected to reach 93.5 million tons in 2016. Surveys repeatedly show, that a very important barrier to participation in recycling is convenience. A majority of consumers would not go more than five miles out of their way to recycle. Our recycling locator provides the closest location by combining local authority and retail recycling points.  
-            <br> <a class="btn btn-default btn-lg" href="consumers.html">Learn More</a> </h2>
-          </div>
-          <div class="col-md-6 wow fadeInRight" data-wow-delay=".5s" data-wow-offset="10">
-          <br><script src="//content.jwplatform.com/players/brVsUPDT-8bSfkr1w.js"></script>
-          </div>
-        </div> 
-      </div>
-    </div>
-    <div id="feature-list-item-3">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <h1 class="title-small wow fadeInLeft" data-wow-offset="10">MobiBin Ewaste Containers</h1>
-            <h2 class="subtitle-small wow fadeInUp" data-wow-delay=".8s" data-wow-offset="10"> 
-            Gartner forecasts 30 billion devices will be connected to the internet by 2020, adding &pound;1.2 trn ($1.9trn usd) in value to the global economy. Consumers can deposit their devices into MobiBin containers for reuse & recycling. MobiBin continuously streams data about its eWaste deposits to the cloud.
-            <br><a class="btn btn-default btn-lg" href="mobibin.html">Learn More</a> </h2>
-          </div>
-          <div class="col-md-6 wow fadeInRight" data-wow-delay=".5s" data-wow-offset="10">
-          <br><script src="//content.jwplatform.com/players/lMD7ou9h-8bSfkr1w.js"></script>
-          </div>
-        </div> 
-      </div>
-    </div>
-  </section>
-  <!-- feature-list Section End -->
+        <footer class="site-footer row" role="contentinfo">
+        <hr/>
+          <div class="large-12 columns">
+<!--            <ul class="inline-list">
+                <li><a href="/waste-service-standards/tutorials.html">Tutorials</a></li>
+<li class="has-dropdown">
+  <a href="/waste-service-standards/models/index.html">Models</a>
+  <ul class="dropdown">
+    <li><a href="/waste-service-standards/models/case.html">Case</a></li>
+    <li><a href="/waste-service-standards/models/event-type.html">Event type</a></li>
+    <li><a href="/waste-service-standards/models/feature-type.html">Feature type</a></li>
+    <li><a href="/waste-service-standards/models/feature.html">Feature</a></li>
+    <li><a href="/waste-service-standards/models/material.html">Material</a></li>
+    <li><a href="/waste-service-standards/models/material-item.html">Material item</a></li>
+    <li><a href="/waste-service-standards/models/round.html">Round</a></li>
+    <li><a href="/waste-service-standards/models/site.html">Site</a></li>
+    <li><a href="/waste-service-standards/models/task.html">Task</a></li>
+    <li><a href="/waste-service-standards/models/waste-container-type.html">Waste container type</a></li>
+    <li><a href="/waste-service-standards/models/waste-container.html">Waste container</a></li>
+    <li><a href="/waste-service-standards/models/waste-event.html">Waste event</a></li>
+    <li><a href="/waste-service-standards/models/waste-service.html">Waste service</a></li>
+    <li><hr/></li>
+    <li><a href="/waste-service-standards/models/address.html">Address</a></li>
+    <li><a href="/waste-service-standards/models/place.html">Place</a></li>
+  </ul>
+</li>
+<li class="has-dropdown">
+  <a href="/waste-service-standards/taxonomies/index.html">Taxonomies</a>
+  <ul class="dropdown">
+    <li><a href="/waste-service-standards/taxonomies/bulky-items.html">Bulky items</a></li>
+    <li><a href="/waste-service-standards/taxonomies/container-types.html">Container types</a></li>
+    <li><a href="/waste-service-standards/taxonomies/materials.html">Materials</a></li>
+    <li><a href="/waste-service-standards/taxonomies/collection-events.html">Missed collection events</a></li>
+  </ul>
+</li>
+<li class="has-dropdown">
+  <a href="/waste-service-standards/apis/index.html">APIs</a>
+  <ul class="dropdown">
+    <li><a href="/waste-service-standards/apis/waste_services.html">Waste services</a></li>
+    <li><a href="/waste-service-standards/apis/places.html">Places</a></li>
+  </ul>
 
-  <section id="bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3 col-sm-3 col-xs-12">
-          <h3>Products</h3>
-          <ul>
-            <li><a href="#">Behaviour Change</a>
-            </li>
-            <li><a href="#">MobiBins</a>
-            </li>
-            <li><a href="#">MobiCollect</a>
-            </li>
-            <li><a href="#">MobiTrack</a>
-            </li>
-            <li><a href="#">The Last App</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-sm-3 col-xs-12">
-          <h3>FAQs</h3>
-          <ul>
-            <li><a href="#">Why choose us?</a>
-            </li>
-            <li><a href="#">Where we are?</a>
-            </li>
-            <li><a href="#">Fees</a>
-            </li>
-            <li><a href="#">Guarantee</a>
-            </li>
-            <li><a href="#">Discount</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-sm-3 col-xs-12">
-          <h3>About</h3>
-          <ul>
-            <li><a href="#">Career</a>
-            </li>
-            <li><a href="#">Partners</a>
-            </li>
-            <li><a href="#">Team</a>
-            </li>
-            <li><a href="#">Clients</a>
-            </li>
-            <li><a href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-3 col-sm-3 col-xs-12">
-          <h3>Find us on</h3>
-          <a class="social" href="#" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-          <a class="social" href="#" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-          <a class="social" href="#" target="_blank"><i class="fa fa-google-plus fa-2x"></i></a>
-          <a class="social" href="#" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
-        </div>
+</li>
+<li><a href="/waste-service-standards/data/data-formats.html">Data</a></li>
+<li><a href="/waste-service-standards/about.html">About</a></li>
+
+            </ul>
+            <p class="quiet copyright right"> <a href="https://twitter.com/">
+                <i class="fa fa-twitter">
+                </i>
+             @</a>, <a href="https://github.com/https://github.com/communitiesuk/waste-service-standards/">
+                <i class="fa fa-github">
+                </i>
+             @https://github.com/communitiesuk/waste-service-standards</a> 2016.</p>
+             -->
+          </div>
+        </footer>
+
+
+      <!-- close the off-canvas menu -->
+      <a class="exit-off-canvas"></a>
+
       </div>
     </div>
-  </section>
-  <!-- Bootstrap JS -->
-  <script src="organisations/assets/js/bootstrap.js"></script>
-  <!-- WOW JS plugin for animation -->
-  <script src="organisations/assets/js/wow.js"></script>
-  <!-- All JS plugin Triggers -->
-  <script src="organisations/assets/js/main.js"></script>
-</body>
+
+
+    <!-- Loading JavaScripts
+    ================================================== -->
+    <!-- Zepto (http://zeptojs.com/) is great, but I am sticking with jQuery. Sorry! -->
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="/waste-service-standards/bower_components/jquery/jquery.js"><\/script>')</script>
+    <script src="/waste-service-standards/js/plugins.js"></script>
+    <script src="/waste-service-standards/bower_components/foundation/js/foundation.min.js"></script>
+    <script src="/waste-service-standards/js/script.js"></script>
+    <script src="/waste-service-standards/js/toc.js"></script>
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      ga('create', '', 'auto');
+      ga('send', 'pageview');
+    </script>
+    <script type="text/javascript">
+$(document).ready(function() {
+    $('#toc').toc( {title: ''});
+});
+</script>
+
+
+  </body>
 </html>
+
 
 
